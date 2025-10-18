@@ -72,10 +72,23 @@ WSGI_APPLICATION = "Learning_MeiDuo_LiRemi.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+'''自行配制成MySQL'''
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        # 使用什么引擎
+        # 数据库引擎(是mysql还是oracle等)
+        'ENGINE':'django.db.backends.mysql',
+        # 数据库的名字
+        'NAME':'meiduo_mall',
+        #连接mysql数据库的用户名
+        'USER':'root',
+        #连接mysql数据库的密码
+        'PASSWORD':'root',
+        # mysql数据库的主机地址
+        'HOST':'127.0.0.1',
+        # mysql数据库的端口号
+        'PORT':'3306',
+        'default-character-set':'utf8'
     }
 }
 

@@ -196,6 +196,12 @@ LOGGING = {
             'handlers': ['console', 'file'],  # 可以同时向终端与文件中输出日志
             'propagate': True,  # 是否继续传递日志信息
             'level': 'INFO',  # 日志器接收的最低日志级别
+            # FATAL/CRITICAL=重大的，危险的(最高)
+            # ERROR=错误
+            # WARNING=警告
+            # INFO=信息
+            # DEBUG=调试
+            # NOTSET=没有设置(最低)
         },
     }
 }

@@ -38,6 +38,12 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 ]
+'''注册users'''
+# 注册方法1(子应用apps中的配置加载不到,但是可以省下对配置的修改)
+# INSTALLED_APPS += ['apps.users']
+# 注册方法2
+INSTALLED_APPS += ['apps.users.apps.UsersConfig']
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

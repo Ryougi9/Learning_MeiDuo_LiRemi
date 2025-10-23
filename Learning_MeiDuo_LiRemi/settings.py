@@ -186,8 +186,8 @@ LOGGING = {
             'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': os.path.join(BASE_DIR, 'logs/meiduo.log'),  # 日志文件的位置
-            'maxBytes': 300 * 1024 * 1024,
-            'backupCount': 10,
+            'maxBytes': 300 * 1024 * 1024, # 单个文件最大空间
+            'backupCount': 10, # 备份份数
             'formatter': 'verbose'
         },
     },
